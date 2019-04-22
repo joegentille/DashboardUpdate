@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="barra-lateral col-12 col-sm-auto">
+                <div class="logo">
+                    <h2>
+                        Dashboard
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="icon-home"></i>
+                        </a>
+                    </h2>                    
+                </div>
+                <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+                    <a href="#"><i class="icon-home"></i><span>Inicio</span></a>
+                    <a href="#"><i class="icon-doc-text"></i><span>Entradas</span></a>
+                    <a href="#"><i class="icon-users"></i><span>Usuarios</span></a>
+                    <a href="#"><i class="icon-cog-alt"></i><span>Configuración</span></a>
+                    <a href="#"><i class="icon-logout"></i><span>Salir</span></a>
+                </nav>
+            </div>
+
+            <main class="main col">
+                <div class="row">
+                    <div class="columna col-lg-7">
+                        <div class="widget nueva_entrada">
+                            <h3 class="titulo">Nueva entrada</h3>
+                            <form action="">
+                                <input type="text" placeholder="Titulo de la entrada">
+                                <textarea placeholder="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex delectus nam deserunt reprehenderit quibusdam aliquam tenetur numquam minus debitis et amet laudantium est praesentium, esse necessitatibus dolor officia natus facere."></textarea>
+                                <div class="d-flex justify-content-end">
+                                    <button><i class="icon icon-edit"></i>Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="columna col-lg-5">
+                        <div class="widget estadisticas">
+                            <h3 class="titulo">Estadisticas</h3>
+                            <div class="contenedor d-flex flex-wrap">
+                                <div class="caja">
+                                    <h3>15236</h3>
+                                    <p>Visitas</p>
+                                </div>
+                                <div class="caja">
+                                    <h3>1831</h3>
+                                    <p>Registros</p>
+                                </div>
+                                <div class="caja">
+                                    <h3>$160548</h3>
+                                    <p>Ingresos</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="widget comentarios">
+                            <h3 class="titulo">Comentarios</h3>
+                            <div class="contenedor">
+                                <div class="comentario d-flex flex-wrap">
+                                    <div class="foto">
+                                        <a href="#">
+                                            <img src="img/persona1.jpg" width="100" alt="Jhon Doe">
+                                        </a>
+                                    </div>
+                                    <div class="texto">
+                                        <a href="#">Jhon Doe</a>
+                                        <p>en <a href="#">Mi primera entrada</a></p>
+                                        <p class="texto-comentario">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ...
+                                        </p>
+                                    </div>
+                                    <div class="botones d-flex justify-content-start flex-wrap w-100">
+                                        <button class="aprobar"><i class="icono icon-ok"></i>Aprobar</button>
+                                        <button class="eliminar"><i class="icono icon-cancel"></i>Eliminar</button>
+                                        <button class="bloquear"><i class="icono icon-flag"></i>Bloquear usuario</button>
+                                    </div>
+                                </div>
+                                <div class="comentario d-flex flex-wrap">
+                                    <div class="foto">
+                                        <a href="#">
+                                            <img src="img/persona2.jpg" width="100" alt="Jhon Doe">
+                                        </a>
+                                    </div>
+                                    <div class="texto">
+                                        <a href="#">Michael Doe</a>
+                                        <p>en <a href="#">Mi primera entrada</a></p>
+                                        <p class="texto-comentario">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ...
+                                        </p>
+                                    </div>
+                                    <div class="botones d-flex justify-content-start flex-wrap w-100">
+                                        <button class="aprobar"><i class="icono icon-ok"></i>Aprobar</button>
+                                        <button class="eliminar"><i class="icono icon-cancel"></i>Eliminar</button>
+                                        <button class="bloquear"><i class="icono icon-flag"></i>Bloquear usuario</button>
+                                    </div>
+                                </div>
+
+                                <div class="comentario d-flex flex-wrap">
+                                    <div class="foto">
+                                        <a href="#">
+                                            <img src="img/persona3.jpg" width="100" alt="Jhon Doe">
+                                        </a>
+                                    </div>
+                                    <div class="texto">
+                                        <a href="#">Alina Doe</a>
+                                        <p>en <a href="#">Mi primera entrada</a></p>
+                                        <p class="texto-comentario">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ...
+                                        </p>
+                                    </div>
+                                    <div class="botones d-flex justify-content-start flex-wrap w-100">
+                                        <button class="aprobar"><i class="icono icon-ok"></i>Aprobar</button>
+                                        <button class="eliminar"><i class="icono icon-cancel"></i>Eliminar</button>
+                                        <button class="bloquear"><i class="icono icon-flag"></i>Bloquear usuario</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+</body>
+</html>
