@@ -13,16 +13,16 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="barra-lateral col-12 col-sm-auto">
+            <div class="barra-lateral col-12 col-sm-auto" id="menuLateral">
                 <div class="logo">
                     <h2>
                         Dashboard
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="icon-home"></i>
+                        <a id="btn-menu" href="javascript:void(0);" class="cierraMenu">
+                            <i class="icon-cancel"></i>
                         </a>
                     </h2>                    
                 </div>
-                <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+                <nav id="enlacesMenu" class="menu d-flex d-sm-block justify-content-center flex-wrap">
                     <a href="#"><i class="icon-home"></i><span>Inicio</span></a>
                     <a href="#"><i class="icon-doc-text"></i><span>Entradas</span></a>
                     <a href="#"><i class="icon-users"></i><span>Usuarios</span></a>
@@ -136,6 +136,7 @@
     </div>
 
     <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/misScripts.js"></script>
     <script src="js/bootstrap.min.js"></script>    
 </body>
 </html>
